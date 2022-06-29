@@ -1,0 +1,83 @@
+
+<!-- saved from url=(0041)file:///C:/Users/user/javascriptForm.html -->
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script language="JavaScript">
+	function Sum(){
+		if(document.calc.operations[0].checked)
+		
+
+	
+
+	{document.calc.Txtout.value=parseInt(document.calc.Txtone.value) + parseInt(document.Txttwo.value)
+	}
+	elseif(document.calc.operations[1].checked){
+		document.calc.Txtout.value = document.calc.Txtone.value-document.calc.Txttwo.value
+
+	}
+}
+	
+//<input type ="hove" value' 'onClick="Sum()">
+
+
+function home(){
+	if(document.log.user.value=="Brian" && document.log.pass=="Cynthia")
+
+{
+alert("login successful")
+window.location="home.html"
+}
+else {
+	alert("wrong username or password!")
+}
+}
+</script>
+</head><body>&lt;
+
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Java Script Functions</title>
+
+
+
+
+<h1> Java Script Controls</h1><h1>
+	<form name="calc">
+		<p>Operators</p>
+		<input type="radio" name="Add">Add
+		<br>
+		<input type="radio" name="subtract">subtract
+		<br>
+		<input type="radio" name="multiply">multiply
+		<br>
+		<input type="radio" name="divide">divide
+		<br>
+		Num1 
+		<input type="number" name="Num1">
+		<br>
+		Num2
+		<input type="number" name="Num2">
+		<br>
+		Output
+		<input type="number" name="Output">
+		<br>
+		<input type="button" value="Execute">
+
+
+	 </form>
+	 
+	 
+
+</h1>
+<form name="log">
+	
+	user<input type="text" name="user">
+	<br>
+	pass<input type="password" name="pass">
+	<br>
+	<input type="button" value="log in">
+	<br>
+
+
+</form></body></html>

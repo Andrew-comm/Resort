@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link Bar Using CSS</title>
+    <style type="text/css">
+        ul{
+            list-style: none;
+            background-color: skyblue;
+            margin: 0;
+
+
+        }
+        li{
+            float: left;
+        }
+        li a,drop{
+            drop:inline-block;
+            color: navy;
+            font-size:20px;
+            text-align:center;
+            text-decoration: none;
+            padding: 10px 20px ;
+
+        }
+        .active{
+            background-color: gray;
+            color: white;
+        }
+        li a:hover, .drop:hover .down{
+            background-color: cyan;
+            color: white;
+        }
+
+        .down{
+            position: absolute;
+            display: none;
+            min-width: 20px;
+            box-shadow:5px 8px 10px 0px black ;
+        }
+        .down a{ 
+            color: black;
+            padding: 12px 18px;
+            text-decoration: none;
+            display: black;
+            text-align: left;
+
+        }
+        .down a:hover{
+            background-color: gray;
+            color: white;
+        }
+        .drop:hover .down{
+            display: block;
+        }
+
+    </style>
+    
+</head>
+<body>
+
+    <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Others"class="drop">Other Pages</a>
+           <div class="down">
+        <a href="Ksids.html">Kids</a>
+        <a href="events.html">Events</a>
+        </div>
+        </li>
+
+       
+
+
+
+    </ul>
+</body>
+
+
+
+</html>

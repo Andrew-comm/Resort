@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cascading stylesheets</title>
+    <style>
+        .header {
+            color: yellow;
+            font-size: 14pt;
+            background-color: green;
+            border-style: double;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #tw {
+            text-align: center;
+            height: 50px;
+            color: yellow;
+            font-size: 20pt;
+            background-color: green;
+            width: 500px;
+            margin-left: 200px;
+            animation-name: rot;
+            animation-timing-function: ease-in-out;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        
+        }
+
+        @keyframes rot{
+            from {
+                transform: rotateX(0deg);
+            }
+            to {
+                transform:rotateX(360deg);
+            }
+
+        }
+
+        #tw:hover {
+            animation-play-state: paused;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <h1 class="header"> CASCADING STYLESHEET</h1>
+    <p>
+       
+        CSS is used to control the style of the web document in a simple and easy way.<br>
+        It improves the outlook of a web document beyond what html alone can provide.</p>
+    <p>
+        It was accepted by <b class="header">WWWC</b> as a means through which web documents can be made elegant for the viewers.
+    </p>
+
+    <div id="tw">
+        <P>
+            Multimedia University of kenya
+        </P>
+
+    </div>
+    
+
+</body>
+</html>
